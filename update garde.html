@@ -1,0 +1,15 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Update Grade</title>
+        <link href="update_grade.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1>Update Grade for {{ name }}</h1>
+        <form method="post" action="/update_grade/{{ name }}">
+            <label for="grade">New Grade:</label>
+            <input type="text" id="grade" name="grade" value=""><br><br>
+            <input type="submit" value="Update Grade">
+        </form>
+    </body>
+    </html>
